@@ -1,112 +1,139 @@
 body{
   margin: 0 ;
   padding: 0;
+  
 }
 
-.err{
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header, .hero, .info, .testimonial, .cta, footer {
+  padding: 20px;
+}
+
+.header {
+  display:flex;
+  justify-content: space-between;
+  background-color: rgb(19, 201, 19);
+  color: white;
+}
+
+.logo {
+  font-size: 1.5em;
+}
+
+.nav{
+  align-self: center;
+}
+
+.hero {
+  display: flex;
+  flex-direction:row ;
+  align-items: center;
+  background-color: rgb(19, 201, 19);
+  color: white;
+  justify-content: space-between;
+}
+
+.hero-sub {
   display: flex;
   flex-direction: column;
 }
 
-.header{
-  background-color:#1F2937;
+.hero h1{
+  font-size:2em;
+  margin: 0%;
+}
+
+.hero p, .hero button {
+  margin: 10px 0;
+}
+
+.hero-image {
+  width: 200px;
+  height: 100px;
+  background-color: #ccc;
   display: flex;
-  
-  font-family: 'Roboto';
-  justify-content: space-between;
-  outline:auto;
-  padding: auto;
-
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9em;
 }
 
-.logo{
-font-size: 24px;
-color:#f9faf8
-}
+.villain {
+  display: flex;
+  justify-content: center;
 
-.hlinks{
+}
+.info {
   display: flex;
   justify-content: space-around;
-  margin-right: 20px;
-  font-size: 18px;
+  background-color: white;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+  gap: 25PX;
   
 }
 
-ul{
-  display: flex;
-  text-decoration: none;
-  color: white;
-  list-style: none;
-  gap: 30px;
-}
-
-.neck{
-  background-color:#1F2937;
-  display: flex;
-  flex-direction: column;
-}
-
-.Ncontent{
-  display:flex;
-  flex-direction: column;
+.info-box {
+  background-color: #e0e0e0;
+  padding: 20px;
+  width: 150px;
+  text-align: center;
   outline: auto;
-  
+  outline-color: rgb(19, 201, 19);
+  height: 100px;
+}
+
+.testimonial {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ text-align: center;
+ padding: 40px 20px;
+ font-style: italic;
+ background-color:#e0e0e0;
  
 }
 
-.breast1{
+.cta {
   display: flex;
+  align-items: center;
   justify-content: center;
+  padding: 40px 20px;
+  background-color:white ;
+  color: rgb(19, 201, 19); 
   
-  font-size: 36px;
-  color: #1F2937;
-  font-weight: 900;
-
 }
 
-.breast{
+.inside-cta{
   display: flex;
-  outline: auto;
+  margin: 0%;
+  justify-content: space-between;
+  background-color: rgb(19, 201, 19); 
+  color: white;
+  padding: 20px;
+  gap :90px;
+
+}
+
+.cta button{
   
+  font-size: 1em;
+  color: black;
+  border: ghostwhite;
+  cursor: pointer;
+  display: block;
   
 }
 
-.breast2{
-  outline: auto;
-  display: flex;margin: 0%;
- padding: 300px;
- gap: 20px;
- 
-  
-}
-
-.Torso{
-  outline: auto;
-  display: flex;
-}
-
-.legs{
-  display: flex;
-
-}
 
 .footer{
-  display: flex;
-  outline:auto;
-  justify-content: center;
-  align-items: center;
-  margin-top: 100vh;
-  background-color: #1F2937;
-  padding: 20px;
+  text-align: center;
+  padding:20px;
+  background-color: rgb(19, 201, 19);
   color: white;
-  margin-bottom: 0%;
-}
-
-
-.ecoli{
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  flex-grow: 1 ;
-  box-sizing: border-box;
 }
